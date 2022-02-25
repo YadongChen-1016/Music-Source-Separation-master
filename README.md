@@ -1,5 +1,5 @@
 # Music-Source-Separation-master 
-### The scores here are either taken from their respective papers or from the evaluation scores of [SiSEC18](https://arxiv.org/pdf/1804.06267.pdf), and we show the median of SDR. It is worth mentioning that there is no extra data used in our training procedure. In order to make a fair comparison, we only compare with the methods without data augmentation.
+#### The scores here are either taken from their respective papers or from the evaluation scores of [SiSEC18](https://arxiv.org/pdf/1804.06267.pdf), and we show the median of SDR. It is worth mentioning that there is no extra data used in our training procedure. In order to make a fair comparison, we only compare with the methods without data augmentation.
 |Models|Bass|Drums|Other|Vocals|AVG.|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |IRM oracle|7.12|8.45|7.85|9.43|8.21|
@@ -16,4 +16,4 @@
 |DEMUCS [[paper](https://arxiv.org/pdf/1911.13254.pdf?ref=https://githubhelp.com)] [[code](https://github.com/facebookresearch/demucs)]|7.01|6.86|4.42|6.84|6.28|
 |ours|7.92|7.33|4.92|7.37|6.89|
 
-### The code will be released soon...
+#### The code will be released soon...
