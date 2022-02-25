@@ -1,6 +1,6 @@
 # Music-Source-Separation-master 
 |Models|Bass|Drums|Other|Vocals|AVG.|
-|:---|:---|:---|:---|:---|:---|
+|:--:|:--:|:--:|:--:|:--:|:--:|
 |IRM oracle|7.12|8.45|7.85|9.43|8.21|
 |Wave-U-Net|3.21|4.22|2.25|3.25|3.23|
 |UMX|5.23|5.73|4.02|6.32|5.33|
