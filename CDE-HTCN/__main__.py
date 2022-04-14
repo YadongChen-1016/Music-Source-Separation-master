@@ -17,13 +17,12 @@ from torch.nn.parallel.distributed import DistributedDataParallel
 
 from augment import FlipChannels, FlipSign, Remix, Scale, Shift
 from compressed import get_compressed_datasets
-from model import Demucs
+from model import CDEHTCN
 from parser import get_name, get_parser
 from raw import Rawset
 from repitch import RepitchedWrapper
 from pretrained import load_pretrained, SOURCES
 
-from cd_tcn_se import ConvTasNet
 from test import evaluate
 from train import train_model, validate_model
 from utils import (human_seconds, load_model, save_model, get_state,
@@ -95,29 +94,11 @@ def main():
         else:
             model = load_pretrained(args.test_pretrained)
     elif args.tasnet:
-        model = ConvTasNet(audio_channels=args.audio_channels,
+        model = CDEHTCN(audio_channels=args.audio_channels,
                            samplerate=args.samplerate, X=args.X,
                            segment_length=4 * args.samples,
                            sources=SOURCES)
-    else:
-        model = Demucs(
-            audio_channels=args.audio_channels,
-            channels=args.channels,
-            context=args.context,
-            depth=args.depth,
-            glu=args.glu,
-            growth=args.growth,
-            kernel_size=args.kernel_size,
-            lstm_layers=args.lstm_layers,
-            rescale=args.rescale,
-            rewrite=args.rewrite,
-            stride=args.conv_stride,
-            resample=args.resample,
-            normalize=args.normalize,
-            samplerate=args.samplerate,
-            segment_length=4 * args.samples,
-            sources=SOURCES,
-        )
+        
     model.to(device)
     if args.init:
         model.load_state_dict(load_pretrained(args.init).state_dict())
