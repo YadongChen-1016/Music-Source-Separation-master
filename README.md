@@ -16,4 +16,6 @@
 |DEMUCS [[paper](https://arxiv.org/pdf/1911.13254.pdf?ref=https://githubhelp.com)] [[code](https://github.com/facebookresearch/demucs)]|7.01|6.86|4.42|6.84|6.28|
 |ours|7.92|7.33|4.92|7.37|6.89|
 
+![image](https://github.com/YadongChen-1016/Music-Source-Separation-master/blob/main/CDE-HTCN/table3.png)
+
 ### The code will be released soon...
