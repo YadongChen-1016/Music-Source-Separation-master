@@ -20,3 +20,5 @@ We also make a comparison between our proposed CDEHTCN with the previous methods
 ![image](https://github.com/YadongChen-1016/Music-Source-Separation-master/blob/main/CDE-HTCN/table3.png)
 
 ### The model code has been uploaded and the rest of code will be released soon ...
+
+Hu Y, Chen Y, Yang W, et al. Hierarchic Temporal Convolutional Network With Cross-Domain Encoder for Music Source Separation[J]. IEEE Signal Processing Letters, 2022, 29: 1517-1521. [[paper](https://www.researchgate.net/publication/361661901_Hierarchic_Temporal_Convolutional_Network_with_Cross-Domain_Encoder_for_Music_Source_Separation)]
